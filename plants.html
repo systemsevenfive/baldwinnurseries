@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants - Baldwin Nurseries</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>BALDWIN NURSERIES</h1>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plants.html" class="active">Plants</a></li>
+                        <li><a href="guarantee.html">Our Guarantee</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/BaldwinsNursery/" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content plants-page">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2 class="page-title">Plants</h2>
+                
+                <div class="intro-text">
+                    <p>We have hundreds of different varieties of trees, shrubs, perennials, grasses, ferns at our nursery, including a number of specialty collections. We can't show all our plants here (and new ones are offered yearly, and some types aren't always available or are sold out), but these albums will give you some sense of what we have.</p>
+                </div>
+                
+                <!-- Evergreens Section -->
+                <section class="plant-category">
+                    <h3 class="category-title">Evergreens</h3>
+                    <div class="image-grid" id="evergreens-grid">
+                        <!-- First 5 images will be shown by default -->
+                        <div class="image-item" onclick="openModal('images/plants/Evergreens/BlueSpruce.jpg', 'Blue Spruce')">
+                            <img src="images/plants/Evergreens/BlueSpruce.jpg" alt="Blue Spruce" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/Evergreens/chamaecyparis-8280.jpg', 'Chamaecyparis')">
+                            <img src="images/plants/Evergreens/chamaecyparis-8280.jpg" alt="Chamaecyparis" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/Evergreens/Chamaecyparis.jpg', 'Chamaecyparis')">
+                            <img src="images/plants/Evergreens/Chamaecyparis.jpg" alt="Chamaecyparis" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/Evergreens/Evergreens.jpg', 'Evergreens Collection')">
+                            <img src="images/plants/Evergreens/Evergreens.jpg" alt="Evergreens Collection" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/Evergreens/GoldenSpruce.jpg', 'Golden Spruce')">
+                            <img src="images/plants/Evergreens/GoldenSpruce.jpg" alt="Golden Spruce" loading="lazy">
+                        </div>
+                        
+                        <!-- Additional images (hidden by default) -->
+                        <div class="image-item hidden" onclick="openModal('images/plants/Evergreens/GoldrushMetasequoia.jpg', 'Goldrush Metasequoia')">
+                            <img src="images/plants/Evergreens/GoldrushMetasequoia.jpg" alt="Goldrush Metasequoia" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Evergreens/KoreanFir.jpg', 'Korean Fir')">
+                            <img src="images/plants/Evergreens/KoreanFir.jpg" alt="Korean Fir" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Evergreens/Microbiota.jpg', 'Microbiota')">
+                            <img src="images/plants/Evergreens/Microbiota.jpg" alt="Microbiota" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Evergreens/NewStockFlushing.jpg', 'New Stock Flushing')">
+                            <img src="images/plants/Evergreens/NewStockFlushing.jpg" alt="New Stock Flushing" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Evergreens/NorweiganSpruce.jpg', 'Norwegian Spruce')">
+                            <img src="images/plants/Evergreens/NorweiganSpruce.jpg" alt="Norwegian Spruce" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="show-more-btn" onclick="toggleShowMore('evergreens')">Show More</button>
+                </section>
+
+                <!-- Fall Colour Section -->
+                <section class="plant-category">
+                    <h3 class="category-title">Fall Colour</h3>
+                    <div class="image-grid" id="fallcolour-grid">
+                        <div class="image-item" onclick="openModal('images/plants/FallColour/CornusKousa.jpg', 'Cornus Kousa')">
+                            <img src="images/plants/FallColour/CornusKousa.jpg" alt="Cornus Kousa" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/FallColour/CutleafMaple.jpg', 'Cutleaf Maple')">
+                            <img src="images/plants/FallColour/CutleafMaple.jpg" alt="Cutleaf Maple" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/FallColour/FallColour.jpg', 'Fall Colour Collection')">
+                            <img src="images/plants/FallColour/FallColour.jpg" alt="Fall Colour Collection" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/FallColour/ForsythiaFallColour.jpg', 'Forsythia Fall Colour')">
+                            <img src="images/plants/FallColour/ForsythiaFallColour.jpg" alt="Forsythia Fall Colour" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/FallColour/GinkgoFallColour.jpg', 'Ginkgo Fall Colour')">
+                            <img src="images/plants/FallColour/GinkgoFallColour.jpg" alt="Ginkgo Fall Colour" loading="lazy">
+                        </div>
+                        
+                        <!-- Additional images -->
+                        <div class="image-item hidden" onclick="openModal('images/plants/FallColour/GoldenMapleLeaves.jpg', 'Golden Maple Leaves')">
+                            <img src="images/plants/FallColour/GoldenMapleLeaves.jpg" alt="Golden Maple Leaves" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FallColour/MiscanthusNipponFallColour.jpg', 'Miscanthus Nippon Fall Colour')">
+                            <img src="images/plants/FallColour/MiscanthusNipponFallColour.jpg" alt="Miscanthus Nippon Fall Colour" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FallColour/OakFallColour.jpg', 'Oak Fall Colour')">
+                            <img src="images/plants/FallColour/OakFallColour.jpg" alt="Oak Fall Colour" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FallColour/SumacTigerEyes.jpg', 'Sumac Tiger Eyes')">
+                            <img src="images/plants/FallColour/SumacTigerEyes.jpg" alt="Sumac Tiger Eyes" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FallColour/ViburnumMariesii.jpg', 'Viburnum Mariesii')">
+                            <img src="images/plants/FallColour/ViburnumMariesii.jpg" alt="Viburnum Mariesii" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="show-more-btn" onclick="toggleShowMore('fallcolour')">Show More</button>
+                </section>
+
+                <!-- Flowering Shrubs and Trees Section -->
+                <section class="plant-category">
+                    <h3 class="category-title">Flowering Shrubs and Trees</h3>
+                    <div class="image-grid" id="flowering-grid">
+                        <div class="image-item" onclick="openModal('images/plants/FloweringShrubsTrees/Bloomerang.jpg', 'Bloomerang')">
+                            <img src="images/plants/FloweringShrubsTrees/Bloomerang.jpg" alt="Bloomerang" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/FloweringShrubsTrees/CampfireRose.jpg', 'Campfire Rose')">
+                            <img src="images/plants/FloweringShrubsTrees/CampfireRose.jpg" alt="Campfire Rose" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/FloweringShrubsTrees/CercisLeafCloseup.jpg', 'Cercis Leaf Closeup')">
+                            <img src="images/plants/FloweringShrubsTrees/CercisLeafCloseup.jpg" alt="Cercis Leaf Closeup" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/FloweringShrubsTrees/CornusKousa.jpg', 'Cornus Kousa')">
+                            <img src="images/plants/FloweringShrubsTrees/CornusKousa.jpg" alt="Cornus Kousa" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/FloweringShrubsTrees/Corylopsis.jpg', 'Corylopsis')">
+                            <img src="images/plants/FloweringShrubsTrees/Corylopsis.jpg" alt="Corylopsis" loading="lazy">
+                        </div>
+                        
+                        <!-- Additional images -->
+                        <div class="image-item hidden" onclick="openModal('images/plants/FloweringShrubsTrees/ForestPansyCercis.jpg', 'Forest Pansy Cercis')">
+                            <img src="images/plants/FloweringShrubsTrees/ForestPansyCercis.jpg" alt="Forest Pansy Cercis" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FloweringShrubsTrees/Fothergilla.jpg', 'Fothergilla')">
+                            <img src="images/plants/FloweringShrubsTrees/Fothergilla.jpg" alt="Fothergilla" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FloweringShrubsTrees/GraceSmokeBush.jpg', 'Grace Smoke Bush')">
+                            <img src="images/plants/FloweringShrubsTrees/GraceSmokeBush.jpg" alt="Grace Smoke Bush" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FloweringShrubsTrees/Hamamelis.jpg', 'Hamamelis')">
+                            <img src="images/plants/FloweringShrubsTrees/Hamamelis.jpg" alt="Hamamelis" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FloweringShrubsTrees/HypericumMagical.jpg', 'Hypericum Magical')">
+                            <img src="images/plants/FloweringShrubsTrees/HypericumMagical.jpg" alt="Hypericum Magical" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FloweringShrubsTrees/MagnoliaStar.jpg', 'Magnolia Star')">
+                            <img src="images/plants/FloweringShrubsTrees/MagnoliaStar.jpg" alt="Magnolia Star" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/FloweringShrubsTrees/YellowAzalea.jpg', 'Yellow Azalea')">
+                            <img src="images/plants/FloweringShrubsTrees/YellowAzalea.jpg" alt="Yellow Azalea" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="show-more-btn" onclick="toggleShowMore('flowering')">Show More</button>
+                </section>
+
+                <!-- Native Plants Section -->
+                <section class="plant-category">
+                    <h3 class="category-title">Native Plants</h3>
+                    <div class="image-grid" id="native-grid">
+                        <div class="image-item" onclick="openModal('images/plants/NativePlants/CanadaColumbine.jpg', 'Canada Columbine')">
+                            <img src="images/plants/NativePlants/CanadaColumbine.jpg" alt="Canada Columbine" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/NativePlants/CanadaHolly.jpg', 'Canada Holly')">
+                            <img src="images/plants/NativePlants/CanadaHolly.jpg" alt="Canada Holly" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/NativePlants/LabradorTea.jpg', 'Labrador Tea')">
+                            <img src="images/plants/NativePlants/LabradorTea.jpg" alt="Labrador Tea" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/NativePlants/MarshMarigold.jpg', 'Marsh Marigold')">
+                            <img src="images/plants/NativePlants/MarshMarigold.jpg" alt="Marsh Marigold" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/NativePlants/RosyLadyslipper.jpg', 'Rosy Lady Slipper')">
+                            <img src="images/plants/NativePlants/RosyLadyslipper.jpg" alt="Rosy Lady Slipper" loading="lazy">
+                        </div>
+                        
+                        <!-- Additional images -->
+                        <div class="image-item hidden" onclick="openModal('images/plants/NativePlants/RosyMilkweed.jpg', 'Rosy Milkweed')">
+                            <img src="images/plants/NativePlants/RosyMilkweed.jpg" alt="Rosy Milkweed" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/NativePlants/Sanguinaria.jpg', 'Sanguinaria')">
+                            <img src="images/plants/NativePlants/Sanguinaria.jpg" alt="Sanguinaria" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/NativePlants/SolomonsSeal.jpg', 'Solomon\'s Seal')">
+                            <img src="images/plants/NativePlants/SolomonsSeal.jpg" alt="Solomon's Seal" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/NativePlants/WhiteIris.jpg', 'White Iris')">
+                            <img src="images/plants/NativePlants/WhiteIris.jpg" alt="White Iris" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/NativePlants/YellowSLippers.jpg', 'Yellow Slippers')">
+                            <img src="images/plants/NativePlants/YellowSLippers.jpg" alt="Yellow Slippers" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="show-more-btn" onclick="toggleShowMore('native')">Show More</button>
+                </section>
+
+                <!-- Pollinators Section -->
+                <section class="plant-category">
+                    <h3 class="category-title">Pollinators</h3>
+                    <div class="image-grid" id="pollinators-grid">
+                        <div class="image-item" onclick="openModal('images/plants/Pollinators/Asclepias.jpg', 'Asclepias')">
+                            <img src="images/plants/Pollinators/Asclepias.jpg" alt="Asclepias" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/Pollinators/BlueCorydalis.jpg', 'Blue Corydalis')">
+                            <img src="images/plants/Pollinators/BlueCorydalis.jpg" alt="Blue Corydalis" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/Pollinators/Digitalis.jpg', 'Digitalis')">
+                            <img src="images/plants/Pollinators/Digitalis.jpg" alt="Digitalis" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/Pollinators/EupatoriumTall.jpg', 'Eupatorium Tall')">
+                            <img src="images/plants/Pollinators/EupatoriumTall.jpg" alt="Eupatorium Tall" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/Pollinators/LotsaConeflowers.jpg', 'Lotsa Coneflowers')">
+                            <img src="images/plants/Pollinators/LotsaConeflowers.jpg" alt="Lotsa Coneflowers" loading="lazy">
+                        </div>
+                        
+                        <!-- Additional images -->
+                        <div class="image-item hidden" onclick="openModal('images/plants/Pollinators/MarmaladeEchinacea.jpg', 'Marmalade Echinacea')">
+                            <img src="images/plants/Pollinators/MarmaladeEchinacea.jpg" alt="Marmalade Echinacea" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Pollinators/MonarchOnBudleia.jpg', 'Monarch on Buddleia')">
+                            <img src="images/plants/Pollinators/MonarchOnBudleia.jpg" alt="Monarch on Buddleia" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Pollinators/MonardaRed.jpg', 'Monarda Red')">
+                            <img src="images/plants/Pollinators/MonardaRed.jpg" alt="Monarda Red" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Pollinators/OrangeTrollius.jpg', 'Orange Trollius')">
+                            <img src="images/plants/Pollinators/OrangeTrollius.jpg" alt="Orange Trollius" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Pollinators/PerennialBorder.jpg', 'Perennial Border')">
+                            <img src="images/plants/Pollinators/PerennialBorder.jpg" alt="Perennial Border" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Pollinators/Rudbeckia.jpg', 'Rudbeckia')">
+                            <img src="images/plants/Pollinators/Rudbeckia.jpg" alt="Rudbeckia" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/Pollinators/Tricyrtis.jpg', 'Tricyrtis')">
+                            <img src="images/plants/Pollinators/Tricyrtis.jpg" alt="Tricyrtis" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="show-more-btn" onclick="toggleShowMore('pollinators')">Show More</button>
+                </section>
+
+                <!-- Special Collections Section -->
+                <section class="plant-category">
+                    <h3 class="category-title">Special Collections</h3>
+                    <div class="image-grid" id="special-grid">
+                        <div class="image-item" onclick="openModal('images/plants/SpecialCollections/Angelina.jpg', 'Angelina')">
+                            <img src="images/plants/SpecialCollections/Angelina.jpg" alt="Angelina" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/SpecialCollections/ConraLliy.jpg', 'Conra Lily')">
+                            <img src="images/plants/SpecialCollections/ConraLliy.jpg" alt="Conra Lily" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/SpecialCollections/GoldenFullMoon.jpg', 'Golden Full Moon')">
+                            <img src="images/plants/SpecialCollections/GoldenFullMoon.jpg" alt="Golden Full Moon" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/SpecialCollections/Grasses.jpg', 'Grasses')">
+                            <img src="images/plants/SpecialCollections/Grasses.jpg" alt="Grasses" loading="lazy">
+                        </div>
+                        <div class="image-item" onclick="openModal('images/plants/SpecialCollections/HeleboreDouble.jpg', 'Hellebore Double')">
+                            <img src="images/plants/SpecialCollections/HeleboreDouble.jpg" alt="Hellebore Double" loading="lazy">
+                        </div>
+                        
+                        <!-- Additional images -->
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/Hellebore1.jpg', 'Hellebore')">
+                            <img src="images/plants/SpecialCollections/Hellebore1.jpg" alt="Hellebore" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/HelleboreDouble2.jpg', 'Hellebore Double 2')">
+                            <img src="images/plants/SpecialCollections/HelleboreDouble2.jpg" alt="Hellebore Double 2" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/PinkOpuntia.jpg', 'Pink Opuntia')">
+                            <img src="images/plants/SpecialCollections/PinkOpuntia.jpg" alt="Pink Opuntia" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/PinkTreePeony.jpg', 'Pink Tree Peony')">
+                            <img src="images/plants/SpecialCollections/PinkTreePeony.jpg" alt="Pink Tree Peony" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/TreePeony.jpg', 'Tree Peony')">
+                            <img src="images/plants/SpecialCollections/TreePeony.jpg" alt="Tree Peony" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/YellowBuddleia.jpg', 'Yellow Buddleia')">
+                            <img src="images/plants/SpecialCollections/YellowBuddleia.jpg" alt="Yellow Buddleia" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/YellowOpuntia.jpg', 'Yellow Opuntia')">
+                            <img src="images/plants/SpecialCollections/YellowOpuntia.jpg" alt="Yellow Opuntia" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/YellowTrillium.jpg', 'Yellow Trillium')">
+                            <img src="images/plants/SpecialCollections/YellowTrillium.jpg" alt="Yellow Trillium" loading="lazy">
+                        </div>
+                        <div class="image-item hidden" onclick="openModal('images/plants/SpecialCollections/Yucca.jpg', 'Yucca')">
+                            <img src="images/plants/SpecialCollections/Yucca.jpg" alt="Yucca" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="show-more-btn" onclick="toggleShowMore('special')">Show More</button>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Lightbox -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript for functionality -->
+    <script>
+        // Modal functionality
+        function openModal(imageSrc, caption) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+            
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+            modalCaption.textContent = caption;
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Show More functionality
+        function toggleShowMore(category) {
+            const grid = document.getElementById(category + '-grid');
+            const hiddenImages = grid.querySelectorAll('.hidden');
+            const button = event.target;
+            
+            if (hiddenImages.length > 0) {
+                // Show hidden images
+                hiddenImages.forEach(img => {
+                    img.classList.remove('hidden');
+                });
+                button.textContent = 'Show Less';
+                button.onclick = () => toggleShowMore(category);
+            } else {
+                // Hide additional images (show only first 5)
+                const allImages = grid.querySelectorAll('.image-item');
+                for (let i = 5; i < allImages.length; i++) {
+                    allImages[i].classList.add('hidden');
+                }
+                button.textContent = 'Show More';
+                button.onclick = () => toggleShowMore(category);
+            }
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plants.html" class="active">Plants</a></li>
+                    <li><a href="guarantee.html">Our Guarantee</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
