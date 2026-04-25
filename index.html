@@ -1,189 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baldwin Nurseries - Family Owned Nursery Since 1995</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Baldwin Nurseries — a family-owned nursery specializing in trees, shrubs and perennials, growing for you since 1995.">
+    <title>Baldwin Nurseries — Family Owned Nursery Since 1995</title>
+    <link rel="stylesheet" href="styles-modern.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    <!-- Header Navigation -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>BALDWIN NURSERIES</h1>
-                </div>
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="plants.html">Plants</a></li>
-                        <li><a href="guarantee.html">Our Guarantee</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/BaldwinsNursery/" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                </div>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header" id="site-header">
+        <div class="container site-header__inner">
+            <a href="index.html" class="brand" aria-label="Baldwin Nurseries — Home">
+                <span class="brand__mark" aria-hidden="true"></span>
+                <span class="brand__name">Baldwin Nurseries</span>
+            </a>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+                <ul class="primary-nav__list">
+                    <li><a href="index.html" class="primary-nav__link is-active">Home</a></li>
+                    <li><a href="plants.html" class="primary-nav__link">Plants</a></li>
+                    <li><a href="guarantee.html" class="primary-nav__link">Our Guarantee</a></li>
+                    <li><a href="contact.html" class="primary-nav__link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a class="icon-button" href="https://www.facebook.com/BaldwinsNursery/" target="_blank" rel="noopener noreferrer" aria-label="Baldwin Nurseries on Facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+                    <span class="nav-toggle__bars" aria-hidden="true"></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section / Image Slider -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-slide active">
-                <img src="images/Carousel/1.jpeg" alt="Baldwin Nurseries - Azalea Cannon's Double" class="hero-image">
+    <section class="hero" aria-label="Featured plants from Baldwin Nurseries">
+        <div class="hero__stage">
+            <div class="hero__slide is-active">
+                <img src="images/Carousel/1.jpeg" alt="Baldwin Nurseries — Azalea Cannon's Double" loading="eager">
             </div>
-            <div class="hero-slide">
-                <img src="images/Carousel/2.jpeg" alt="Baldwin Nurseries - Clematis" class="hero-image">
+            <div class="hero__slide">
+                <img src="images/Carousel/2.jpeg" alt="Baldwin Nurseries — Clematis" loading="lazy">
             </div>
-            <div class="hero-slide">
-                <img src="images/Carousel/3.jpeg" alt="Baldwin Nurseries - Honey Bee on Milkweed" class="hero-image">
+            <div class="hero__slide">
+                <img src="images/Carousel/3.jpeg" alt="Baldwin Nurseries — Honey Bee on Milkweed" loading="lazy">
             </div>
-            <div class="hero-slide">
-                <img src="images/Carousel/4.jpeg" alt="Baldwin Nurseries - Labrador Tea from Seed" class="hero-image">
+            <div class="hero__slide">
+                <img src="images/Carousel/4.jpeg" alt="Baldwin Nurseries — Labrador Tea from Seed" loading="lazy">
             </div>
-            <div class="hero-slide">
-                <img src="images/Carousel/5.jpg" alt="Baldwin Nurseries - Monarda Fistulosa" class="hero-image">
+            <div class="hero__slide">
+                <img src="images/Carousel/5.jpg" alt="Baldwin Nurseries — Monarda Fistulosa" loading="lazy">
             </div>
-            <div class="hero-slide">
-                <img src="images/Carousel/6.jpg" alt="Baldwin Nurseries - Myrica" class="hero-image">
+            <div class="hero__slide">
+                <img src="images/Carousel/6.jpg" alt="Baldwin Nurseries — Myrica" loading="lazy">
             </div>
-            <div class="hero-slide">
-                <img src="images/Carousel/7.jpg" alt="Baldwin Nurseries - Uvularia Grandiflora" class="hero-image">
+            <div class="hero__slide">
+                <img src="images/Carousel/7.jpg" alt="Baldwin Nurseries — Uvularia Grandiflora" loading="lazy">
             </div>
-            
-            <!-- Navigation Arrows -->
-            <button class="slider-nav prev" aria-label="Previous image">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-                </svg>
-            </button>
-            <button class="slider-nav next" aria-label="Next image">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
-                </svg>
-            </button>
-            
-            <!-- Pagination Dots -->
-            <div class="slider-pagination">
-                <button class="pagination-dot active" aria-label="Slide 1"></button>
-                <button class="pagination-dot" aria-label="Slide 2"></button>
-                <button class="pagination-dot" aria-label="Slide 3"></button>
-                <button class="pagination-dot" aria-label="Slide 4"></button>
-                <button class="pagination-dot" aria-label="Slide 5"></button>
-                <button class="pagination-dot" aria-label="Slide 6"></button>
-                <button class="pagination-dot" aria-label="Slide 7"></button>
-            </div>
+        </div>
+
+        <div class="hero__veil" aria-hidden="true"></div>
+
+        <button class="hero__nav hero__nav--prev" type="button" aria-label="Previous image">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+        </button>
+        <button class="hero__nav hero__nav--next" type="button" aria-label="Next image">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+            </svg>
+        </button>
+
+        <div class="hero__caption">
+            <span class="hero__pill">
+                <span class="hero__pill-dot" aria-hidden="true"></span>
+                Open April – November
+            </span>
+        </div>
+
+        <div class="hero__dots" role="tablist" aria-label="Hero slides">
+            <button class="hero__dot is-active" type="button" role="tab" aria-label="Slide 1"></button>
+            <button class="hero__dot" type="button" role="tab" aria-label="Slide 2"></button>
+            <button class="hero__dot" type="button" role="tab" aria-label="Slide 3"></button>
+            <button class="hero__dot" type="button" role="tab" aria-label="Slide 4"></button>
+            <button class="hero__dot" type="button" role="tab" aria-label="Slide 5"></button>
+            <button class="hero__dot" type="button" role="tab" aria-label="Slide 6"></button>
+            <button class="hero__dot" type="button" role="tab" aria-label="Slide 7"></button>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <div class="content-wrapper">
-                <h2 class="main-title">Welcome to Baldwin Nurseries</h2>
-                <h3 class="subtitle">Celebrating 31 years growing for you in 2026</h3>
-                
-                <div class="intro-text">
-                    <p>We're a family owned and operated nursery specializing in trees, shrubs and perennials. We have numerous collections such as native shrubs, trees and perennials, magnolias, Japanese maples, deer-resistant plants, and more. Our display gardens feature young specimens as well as more mature shrubs and trees, and we're always adding to the mix. With more than 5 acres, there is something for everyone.</p>
+    <main>
+        <section class="section">
+            <div class="container container--narrow welcome reveal">
+                <h1 class="welcome__title">Welcome to <em>Baldwin Nurseries</em></h1>
+                <p class="welcome__subtitle">Celebrating 31 years growing for you in 2026</p>
+                <hr class="divider" aria-hidden="true">
+                <p class="welcome__lede">We're a family owned and operated nursery specializing in trees, shrubs and perennials. We have numerous collections such as native shrubs, trees and perennials, magnolias, Japanese maples, deer-resistant plants, and more. Our display gardens feature young specimens as well as more mature shrubs and trees, and we're always adding to the mix. With more than 5 acres, there is something for everyone.</p>
+            </div>
+        </section>
+
+        <section class="section section--tight">
+            <div class="container">
+                <div class="info reveal">
+                    <article class="info__card">
+                        <p class="info__label">Hours</p>
+                        <h2 class="info__lead">Open April – November</h2>
+                        <p class="info__detail">Gift certificates always available.</p>
+                    </article>
+
+                    <article class="info__card">
+                        <p class="info__label">Contact</p>
+                        <h2 class="info__lead">Call or text 902-799-9737</h2>
+                        <p class="info__detail">During business hours.</p>
+                    </article>
+
+                    <article class="info__card info__card--links">
+                        <p class="info__label">Stay in touch</p>
+                        <h2 class="info__lead"><a href="Catalogue/2026_final.pdf" target="_blank" rel="noopener noreferrer">2026 Catalogue Available Here!</a></h2>
+                        <p class="info__detail"><a href="https://www.facebook.com/BaldwinsNursery/" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a></p>
+                    </article>
                 </div>
-                
-                <div class="info-section">
-                    <div class="hours">
-                        <h3>Open April - November</h3>
-                        <h4>Gift certificates always available</h4>
-                    </div>
-                    
-                    <div class="contact">
-                        <h4>Call/text 902-799-9737 during business hours</h4>
-                    </div>
-                    
-                    <div class="links">
-                        <a href="https://www.facebook.com/BaldwinsNursery/" class="facebook-link" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a>
-                        <a href="Catalogue/2026_final.pdf" class="catalogue-link" target="_blank" rel="noopener noreferrer">2026 Catalogue Available Here!</a>
-                    </div>
-                </div>
-                
-                <!-- Video Player Section -->
-                <div class="video-section">
-                    <div class="video-player">
-                        <iframe 
-                            src="https://www.youtube.com/embed/8s3ILgDB6bg" 
-                            title="Baldwin Nurseries Video" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+
+                <div class="cta-row reveal">
+                    <a class="cta cta--primary" href="Catalogue/2026_final.pdf" target="_blank" rel="noopener noreferrer">
+                        2026 Catalogue Available Here!
+                        <span class="cta__arrow" aria-hidden="true">→</span>
+                    </a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="section video">
+            <div class="container container--narrow reveal">
+                <div class="video__frame">
+                    <iframe
+                        src="https://www.youtube.com/embed/8s3ILgDB6bg"
+                        title="Baldwin Nurseries Video"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Minimal JavaScript for slider functionality -->
-    <script>
-        // Simple slider functionality
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-slide');
-        const dots = document.querySelectorAll('.pagination-dot');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            slides[index].classList.add('active');
-            dots[index].classList.add('active');
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        // Event listeners
-        nextBtn.addEventListener('click', nextSlide);
-        prevBtn.addEventListener('click', prevSlide);
-
-        // Dot navigation
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentSlide = index;
-                showSlide(currentSlide);
-            });
-        });
-
-        // Auto-advance slides every 5 seconds
-        setInterval(nextSlide, 5000);
-    </script>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="plants.html">Plants</a></li>
-                    <li><a href="guarantee.html">Our Guarantee</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p class="site-footer__brand">Baldwin Nurseries</p>
+            <ul class="site-footer__nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="guarantee.html">Our Guarantee</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container site-footer__meta">
+            <a href="https://www.facebook.com/BaldwinsNursery/" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            const slides = document.querySelectorAll('.hero__slide');
+            const dots = document.querySelectorAll('.hero__dot');
+            const prevBtn = document.querySelector('.hero__nav--prev');
+            const nextBtn = document.querySelector('.hero__nav--next');
+            const slideCount = slides.length;
+            let currentSlide = 0;
+            let autoTimer = null;
+
+            function showSlide(index) {
+                currentSlide = (index + slideCount) % slideCount;
+                slides.forEach((slide, i) => slide.classList.toggle('is-active', i === currentSlide));
+                dots.forEach((dot, i) => dot.classList.toggle('is-active', i === currentSlide));
+            }
+
+            function next() { showSlide(currentSlide + 1); }
+            function prev() { showSlide(currentSlide - 1); }
+
+            function startAuto() {
+                stopAuto();
+                autoTimer = setInterval(next, 6000);
+            }
+
+            function stopAuto() {
+                if (autoTimer) {
+                    clearInterval(autoTimer);
+                    autoTimer = null;
+                }
+            }
+
+            nextBtn?.addEventListener('click', () => { next(); startAuto(); });
+            prevBtn?.addEventListener('click', () => { prev(); startAuto(); });
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', () => { showSlide(i); startAuto(); });
+            });
+
+            const heroEl = document.querySelector('.hero');
+            heroEl?.addEventListener('mouseenter', stopAuto);
+            heroEl?.addEventListener('mouseleave', startAuto);
+
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (!reduceMotion) {
+                startAuto();
+            }
+        })();
+
+        (function () {
+            const header = document.getElementById('site-header');
+            if (!header) return;
+            const onScroll = () => {
+                header.classList.toggle('is-scrolled', window.scrollY > 8);
+            };
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
+
+        (function () {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.getElementById('primary-nav');
+            if (!toggle || !nav) return;
+            toggle.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('is-open');
+                toggle.setAttribute('aria-expanded', String(isOpen));
+                toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+            });
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('is-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.setAttribute('aria-label', 'Open menu');
+                });
+            });
+        })();
+
+        (function () {
+            const reveals = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window) || !reveals.length) {
+                reveals.forEach(el => el.classList.add('is-visible'));
+                return;
+            }
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+            reveals.forEach(el => io.observe(el));
+        })();
+    </script>
 </body>
 </html>
