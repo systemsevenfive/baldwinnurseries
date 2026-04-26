@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__atlassian__transitionJiraIssue",
+      "Bash(git *)",
+      "Bash(tidy -version)",
+      "Bash(tidy -q -e --gnu-emacs yes /Users/ryansaunders/Desktop/Dev/Websites/baldwinnurseries/index.html)",
+      "Bash(tidy -q -e --gnu-emacs yes /Users/ryansaunders/Desktop/Dev/Websites/baldwinnurseries/contact.html)",
+      "Bash(python3 -m http.server 8765)",
+      "Bash(echo \"PID=$!\")",
+      "Bash(curl -s -o /dev/null -w \"index: %{http_code}\\\\n\" http://localhost:8765/index.html)",
+      "Bash(curl -s -o /dev/null -w \"css:   %{http_code}\\\\n\" http://localhost:8765/styles-modern.css)",
+      "Bash(curl -s -o /dev/null -w \"img1:  %{http_code}\\\\n\" http://localhost:8765/images/Carousel/1.jpeg)",
+      "Bash(kill %1)",
+      "Bash(open -a Safari http://localhost:8765/index.html)",
+      "Bash(echo \"server PID=$!\")",
+      "Bash(pkill -f \"python3 -m http.server 8765\")",
+      "Bash(/usr/bin/curl --version)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"index.html        %{http_code}\\\\n\" http://localhost:8765/index.html)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"plants.html       %{http_code}\\\\n\" http://localhost:8765/plants.html)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"guarantee.html    %{http_code}\\\\n\" http://localhost:8765/guarantee.html)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"contact.html      %{http_code}\\\\n\" http://localhost:8765/contact.html)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"styles-modern.css %{http_code}\\\\n\" http://localhost:8765/styles-modern.css)",
+      "Bash(gh pr *)",
+      "mcp__atlassian__addCommentToJiraIssue"
+    ]
+  }
+}
