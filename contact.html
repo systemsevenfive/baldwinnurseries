@@ -3,77 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Baldwin Nurseries</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Contact Baldwin Nurseries — call or text 902-799-9737. Visit us at 500 Mines Road, Falmouth, Nova Scotia.">
+    <title>Contact — Baldwin Nurseries</title>
+    <link rel="stylesheet" href="styles-modern.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>BALDWIN NURSERIES</h1>
-                </div>
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="plants.html">Plants</a></li>
-                        <li><a href="guarantee.html">Our Guarantee</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/BaldwinsNursery/" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container site-header__inner">
+            <a href="index.html" class="brand" aria-label="Baldwin Nurseries — Home">
+                <span class="brand__mark" aria-hidden="true"></span>
+                <span class="brand__name">Baldwin Nurseries</span>
+            </a>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+                <ul class="primary-nav__list">
+                    <li><a href="index.html" class="primary-nav__link">Home</a></li>
+                    <li><a href="plants.html" class="primary-nav__link">Plants</a></li>
+                    <li><a href="guarantee.html" class="primary-nav__link">Our Guarantee</a></li>
+                    <li><a href="contact.html" class="primary-nav__link is-active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a class="icon-button" href="https://www.facebook.com/BaldwinsNursery/" target="_blank" rel="noopener noreferrer" aria-label="Baldwin Nurseries on Facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+                    <span class="nav-toggle__bars" aria-hidden="true"></span>
+                </button>
             </div>
         </div>
     </header>
-    <br>
-    <!-- Main Content -->
-    <main class="main-content contact-page">
-        <div class="container">
-            <div class="content-wrapper">
-                <div class="contact-info">
-                    <p>If you need to reach us, please text or call <a href="tel:902-799-9737">902-799-9737</a></p>
-                    <p>We have a Facebook page but are unable to answer questions there every day.</p>
-                </div>
-                
-                <!-- Google Maps -->
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5654.8!2d-64.1!3d44.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDU0JzI0LjAiTiA2NMKwMDYnMDAuMCJX!5e0!3m2!1sen!2sca!4v1640995200000!5m2!1sen!2sca&q=500+Mines+Road,+Falmouth,+Nova+Scotia,+B0P+1P0"
-                        width="100%" 
-                        height="400" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Baldwin Nurseries Location - 500 Mines Road, Falmouth, Nova Scotia, B0P 1P0">
-                    </iframe>
+
+    <section class="page-header">
+        <div class="container container--narrow reveal">
+            <h1 class="page-header__title">Contact</h1>
+        </div>
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid reveal">
+                    <div class="contact-info">
+                        <p class="contact-info__phone">
+                            If you need to reach us, please text or call <a href="tel:902-799-9737">902-799-9737</a>
+                        </p>
+                        <p class="contact-info__note">We have a Facebook page but are unable to answer questions there every day.</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5654.8!2d-64.1!3d44.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDU0JzI0LjAiTiA2NMKwMDYnMDAuMCJX!5e0!3m2!1sen!2sca!4v1640995200000!5m2!1sen!2sca&q=500+Mines+Road,+Falmouth,+Nova+Scotia,+B0P+1P0"
+                            width="100%"
+                            height="400"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Baldwin Nurseries Location — 500 Mines Road, Falmouth, Nova Scotia, B0P 1P0"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="plants.html">Plants</a></li>
-                    <li><a href="guarantee.html">Our Guarantee</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p class="site-footer__brand">Baldwin Nurseries</p>
+            <ul class="site-footer__nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="guarantee.html">Our Guarantee</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container site-footer__meta">
+            <a href="https://www.facebook.com/BaldwinsNursery/" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            const header = document.getElementById('site-header');
+            if (!header) return;
+            const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
+
+        (function () {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.getElementById('primary-nav');
+            if (!toggle || !nav) return;
+            toggle.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('is-open');
+                toggle.setAttribute('aria-expanded', String(isOpen));
+                toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+            });
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('is-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.setAttribute('aria-label', 'Open menu');
+                });
+            });
+        })();
+
+        (function () {
+            const reveals = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window) || !reveals.length) {
+                reveals.forEach(el => el.classList.add('is-visible'));
+                return;
+            }
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+            reveals.forEach(el => io.observe(el));
+        })();
+    </script>
 </body>
 </html>
