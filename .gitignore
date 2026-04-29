@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if any tooling sneaks in later)
+node_modules/
+npm-debug.log*
+
+# Claude Code / superpowers
+.claude/
+.superpowers/
+.worktrees/
